@@ -15,7 +15,7 @@ The hosting web server must have PHP >= 7.0.0 installed with the following exten
 - Tokenizer PHP Extension
 - XML PHP Extension
 
-Rename *.env.example* to *.env* in the application root directory.
+Rename *.env.example* to *.env* in the application root directory. Change the APP-KEY in the *.env* file to some random base64 encoded string for more security.
 
 The server root should be the */public* directory which is inside the application root directory.
 Directories within the */storage* and the */bootstrap/cache* directories should be writable by the web server.
