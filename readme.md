@@ -15,8 +15,11 @@ The hosting web server must have PHP >= 7.0.0 installed with the following exten
 - Tokenizer PHP Extension
 - XML PHP Extension
 
+Rename *.env.example* to *.env* in the application root directory.
+
 The server root should be the */public* directory which is inside the application root directory.
 Directories within the */storage* and the */bootstrap/cache* directories should be writable by the web server.
+
 The SQLite database file have the required structure (with some test data), no additional setup needed.
 The default 5 rows per page can be changed in the *app/Http/Controllers/HomeController.php* file by setting the __private $perPage__ variable.
 
